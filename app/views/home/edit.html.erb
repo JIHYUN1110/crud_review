@@ -1,0 +1,8 @@
+<h1>일기 수정할까?</h1>
+<p>쓰고나서 등록을 눌러용 ╰(*´︶`*)╯</p>
+
+<form action='/home/update/<%=@post.id%>' method='post'>
+    제목: <input type="text" name="title" value="<%=@post.title%>"><br>
+    내용: <input type="text" name="content" value="<%=@post.content%>"><br>
+    <input type="submit" value="수정">
+</form>
